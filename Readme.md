@@ -1,44 +1,136 @@
-# Gym Management System (CRUD Application)
+🏋️ Gym Management System – Frontend
+🚀 Live Application
 
-## 📌 Project Overview
-The Gym Management System is a CRUD-based application developed to manage gym members, trainers, and membership plans efficiently. This project helps gym administrators perform Create, Read, Update, and Delete operations in a simple and organized way.
+🌐 Deployed on Vercel: https://gym-frontend-theta.vercel.app
 
----
 
-## 📖 Description
-This project was built as part of my academic and practical learning to understand full-stack development and database operations. The system allows gym administrators to manage member details, trainer information, and membership plans through a user-friendly interface connected with a backend API and database.
+📌 Project Overview
 
----
+This is the Frontend of the Gym Management System — a full-stack CRUD application built using React + Vite.
 
-## ✨ Features
-- Add new gym members
-- View all registered members
-- Update member details
-- Delete members
-- Manage trainers and workout plans
-- Membership plan management
-- Clean and user-friendly interface
-- Secure backend with database connectivity
+The frontend provides a clean, responsive user interface for managing:
 
----
+Gym Members
 
-## 🛠️ Technologies Used
-**Frontend:**
-- HTML
-- CSS
-- Bootstrap / React (if used)
+Trainers
 
-**Backend:**
-- Java
-- Spring Boot
-- REST API
+Membership Plans
 
-**Database:**
-- MySQL
+It communicates with a Spring Boot backend using REST APIs.
 
-**Tools:**
-- Git & GitHub
-- VS Code
-- Postman
+✨ Features
 
+✅ Add new members
+
+✅ View all members
+
+✅ Update member details
+
+✅ Delete members
+
+✅ Trainer management UI
+
+✅ Membership plan management
+
+✅ Responsive design
+
+✅ API integration with backend
+
+✅ Dockerized deployment
+
+✅ Hosted on Vercel
+
+🛠️ Technologies Used
+⚛️ Frontend Stack
+
+React
+
+Vite
+
+JavaScript (ES6+)
+
+HTML5
+
+CSS3
+
+Bootstrap (if used)
+
+🌐 Deployment
+
+Vercel
+
+🐳 Containerization
+
+Docker
+
+Nginx (Production build server)
+
+📂 Project Structure
+gym_frontend/
+│
+├── client/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   ├── vite.config.js
+│   └── Dockerfile
+│
+└── README.md
+
+🔌 Backend Connection
+
+Make sure your backend is running at:
+
+http://localhost:8080
+
+
+Update API base URL inside your frontend if deploying to production:
+
+const API_BASE_URL = "https://your-backend-url.com";
+
+🚀 Running Locally
+1️⃣ Install Dependencies
+npm install
+
+2️⃣ Start Development Server
+npm run dev
+
+
+Open:
+
+http://localhost:5173
+
+🐳 Running with Docker
+Build Docker Image
+docker build -t gym-frontend ./client
+
+Run Container
+docker run -p 3000:80 gym-frontend
+
+
+Open:
+
+http://localhost:3000
+
+🌍 Deployment (Vercel)
+
+Push code to GitHub
+
+Import project in Vercel
+
+Select root directory (client folder if needed)
+
+Deploy
+
+🎯 Learning Outcomes
+
+React Component Architecture
+
+API Integration
+
+State Management
+
+Vite Build Optimization
+
+Docker for Frontend
 ---
