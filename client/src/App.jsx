@@ -54,8 +54,13 @@ export default function App() {
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
-  const handleDelete = async (userId) => {
+const handleDelete = async (userId) => {
+    const password = window.prompt("Enter password to delete:");
+    if (password === null) return;
+    if (password !== "1123") {
+      alert("❌ Wrong password! Delete cancelled.");
+      return;
+    }
     const confirmDelete = window.confirm(
       "Are you sure you want to delete this record?",
     );
